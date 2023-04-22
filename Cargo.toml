@@ -8,7 +8,8 @@ tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
 prost = "0.11"
 tonic = "0.8.3"
 nostr-sdk = "0.19.1"
-toml = "0.7.3"
+config = { version = "0.13.3", features = ["toml"] }
+serde = { version = "1.0.160", features = ["derive"] }
 
 [build-dependencies]
 tonic-build = { version="0.8.3", features = ["prost"] }
